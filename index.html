@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Sample JS Sorter</title>
+</head>
+<body>
+<div>
+    <label for="dataset">Array of Data (comma separated)</label>
+    <textarea id="dataset" rows="3" style="width:100%"></textarea>
+</div>
+<br>
+<button onclick="findSmallestValue()">Find Smallest Value</button>
+<button onclick="findSmallestValueOptimized()">Find Smallest Value (optimized)</button>
+<button onclick="fetchDataset(32)">Fetch Dataset (32)</button>
+<button onclick="fetchDataset(100)">Fetch Dataset (100)</button>
+<button onclick="fetchDataset(500)">Fetch Dataset (500)</button>
+<button onclick="fetchDataset(1000)">Fetch Dataset (1000)</button>
+
+<br><br>
+<h3>Results:</h3>
+<div id="results">
+    To receive results, please select an option above.
+</div>
+
+<script type="text/javascript" src="app.js"></script>
+<script>
+    init();
+</script>
+</body>
+</html>
